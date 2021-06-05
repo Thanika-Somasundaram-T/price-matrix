@@ -1,6 +1,7 @@
 const config = {
-	countStart: 0,
-	increment: 1,
+	shopInput: '',
+	productInput: '',
+	priceInput: 0,
 };
 
 export default config;

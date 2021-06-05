@@ -1,12 +1,13 @@
 import { React } from 'react';
-import config from '../core/config';
 import context from '../core/context';
 
-const SimpleButton = () =>
-	<button
-		onClick={ () => context.actions.increaseCount(config.increment) }
-	>
-		Click Me!
-	</button>;
+const ShopName = () =>
+	<input
+		name="shopName"
+		type="text"
+		// eslint-disable-next-line no-console
+		value={ context.state.shopInput }
+		onChange={ (evt) => context.actions.updateShopInput(evt.target.value) }
+	/>;
 
-export default SimpleButton;
+export default ShopName;
