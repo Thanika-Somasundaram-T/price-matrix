@@ -1,7 +1,10 @@
+
 const config = {
 	shopInput: '',
 	productInput: '',
-	priceInput: 0,
+	priceInput: '-',
+	priceMatrix: [],
+	IdLength: 12,
 };
 
 export default config;
