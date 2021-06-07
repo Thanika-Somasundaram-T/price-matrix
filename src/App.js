@@ -6,6 +6,7 @@ import ShopName from './components/shopNameInputBox';
 import ProductName from './components/productNameInputBox';
 import ProductPrice from './components/productPriceInputBox';
 import AddButton from './components/addButton';
+import Table from './components/table';
 
 const App = () => {
 	useEffect(SampleService.sayHai, []);
@@ -14,16 +15,13 @@ const App = () => {
 
 	return (
 		<div className="App">
-			<div>
-				ShopName : { ShopName() }
-			</div>
-			<div>
-				ProductName : { ProductName() }
-			</div>
+			<div>ShopName : { ShopName() }</div>
+			<div>ProductName : { ProductName() }</div>
 			<div>
 				<span>Price : { ProductPrice() }</span>
 				<span>{ AddButton() }</span>
 			</div>
+			<div>{ Table() }</div>
 		</div>
 
 	);

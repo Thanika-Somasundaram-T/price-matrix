@@ -16,6 +16,9 @@ const addPriceMatrix = ({ state }) => {
 	const { shopInput, productInput, priceInput, priceMatrix } = state;
 
 	return {
+		shopInput: '',
+		productInput: '',
+		priceInput: '',
 		priceMatrix: PriceMatrixManager.addPriceMatrix(
 			priceMatrix, shopInput, productInput, priceInput
 		),
