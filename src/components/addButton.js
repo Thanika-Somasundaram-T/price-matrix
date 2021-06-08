@@ -3,7 +3,7 @@ import { React } from 'react';
 
 const AddButton = () =>
 	<button
-		onClick={ () => context.actions.addPriceMatrix() }
+		onClick={ () => context.actions.addItems() }
 	>ADD
 	</button>;
 

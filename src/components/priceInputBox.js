@@ -1,7 +1,7 @@
 import { React } from 'react';
 import context from '../core/context';
 
-const ProductPrice = () =>
+const Price = () =>
 	<input
 		name="productPrice"
 		type="number"
@@ -13,4 +13,4 @@ const ProductPrice = () =>
 			context.actions.updatePriceInput(evt.target.value) }
 	/>;
 
-export default ProductPrice;
+export default Price;

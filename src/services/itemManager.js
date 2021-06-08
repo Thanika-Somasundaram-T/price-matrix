@@ -10,15 +10,15 @@ const getArrayDict = (
 	price: priceInput,
 });
 
-const addPriceMatrix = (
-	priceArray, shopInput, productInput, priceInput
+const addItems = (
+	items, shopInput, productInput, priceInput
 ) =>
-	priceArray.concat(getArrayDict(
+	items.concat(getArrayDict(
 		shopInput, productInput, priceInput
 	));
 
-const PriceMatrixManager = {
-	addPriceMatrix,
+const ItemManager = {
+	addItems,
 };
 
-export default PriceMatrixManager;
+export default ItemManager;

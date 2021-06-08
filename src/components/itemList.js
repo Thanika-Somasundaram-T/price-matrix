@@ -1,7 +1,7 @@
 import { React } from 'react';
 import '../App.css';
 import context from '../core/context';
-import TableRow from './tableRow';
+import Item from './item';
 
 const style = {
 	marginLeft: 'auto',
@@ -10,20 +10,20 @@ const style = {
 	marginTop: '50px',
 	border: '5px solid black',
 };
-const Table = () =>
+const ItemList = () =>
 	<div>
 		<table style={ style }>
 			<thead>
 				<tr>
-					<th> Shop Name </th>
+					<th> Shop </th>
 					<th> Product </th>
 					<th> Price </th>
 				</tr>
 			</thead>
 			<tbody>
-				{ context.state.priceMatrix.map(TableRow) }
+				{ context.state.items.map(Item) }
 			</tbody>
 		</table>
 	</div>;
 
-export default Table;
+export default ItemList;

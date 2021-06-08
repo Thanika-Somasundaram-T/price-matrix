@@ -3,25 +3,25 @@ import './App.css';
 import context from './core/context';
 import SampleService from './services/sample';
 import ShopName from './components/shopNameInputBox';
-import ProductName from './components/productNameInputBox';
-import ProductPrice from './components/productPriceInputBox';
+import Product from './components/productInputBox';
+import Price from './components/priceInputBox';
 import AddButton from './components/addButton';
-import Table from './components/table';
+import ItemList from './components/itemList';
 
 const App = () => {
 	useEffect(SampleService.sayHai, []);
 	// eslint-disable-next-line no-console
-	console.log(context.state.priceMatrix);
+	console.log(context.state.items);
 
 	return (
 		<div className="App">
-			<div>ShopName : { ShopName() }</div>
-			<div>ProductName : { ProductName() }</div>
+			<div>Shop Name : { ShopName() }</div>
+			<div>Product : { Product() }</div>
 			<div>
-				<span>Price : { ProductPrice() }</span>
+				<span>Price : { Price() }</span>
 				<span>{ AddButton() }</span>
 			</div>
-			<div>{ Table() }</div>
+			<div>{ ItemList() }</div>
 		</div>
 
 	);

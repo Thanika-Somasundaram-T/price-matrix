@@ -1,9 +1,9 @@
 import { React } from 'react';
 import context from '../core/context';
 
-const ProductName = () =>
+const Product = () =>
 	<input
-		name="productName"
+		name="product"
 		type="text"
 		// eslint-disable-next-line no-console
 		value={ context.state.productInput }
@@ -11,4 +11,4 @@ const ProductName = () =>
 			context.actions.updateProductInput(evt.target.value) }
 	/>;
 
-export default ProductName;
+export default Product;
