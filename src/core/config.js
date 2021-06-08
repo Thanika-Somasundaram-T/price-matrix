@@ -2,7 +2,7 @@
 const config = {
 	shopInput: '',
 	productInput: '',
-	priceInput: '-',
+	priceInput: '',
 	IdLength: 12,
 };
 

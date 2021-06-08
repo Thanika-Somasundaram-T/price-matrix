@@ -5,6 +5,7 @@ const seed = {
 	productInput: config.productInput,
 	priceInput: config.priceInput,
 	items: [],
+	disable: true,
 };
 
 export default seed;
