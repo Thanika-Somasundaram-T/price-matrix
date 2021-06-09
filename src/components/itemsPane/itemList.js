@@ -1,6 +1,6 @@
 import { React } from 'react';
-import '../App.css';
-import context from '../core/context';
+import '../../App.css';
+import context from '../../core/context';
 import Item from './item';
 
 const style = {
