@@ -1,6 +1,6 @@
 import { React } from 'react';
 import '../../App.css';
-
+import MinimumList from './minimumList';
 
 const style = {
 	position: 'absolute',
@@ -16,6 +16,7 @@ const Minimum = () => {
 	return (
 		<div className='Minimum' style={ style }>
 		<div><h3>Minimum</h3></div>
+		<div>{ MinimumList() }</div>
 		</div>
 	);
 };
