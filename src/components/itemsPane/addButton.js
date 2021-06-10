@@ -9,7 +9,7 @@ const checkDisable = () => {
 		'add', shopInput, productInput, priceInput
 	);
 
-	return !(shopInput !== '' && productInput !== '' && priceInput !== '') ;
+	return !(shopInput !== '' && productInput !== '' && priceInput !== '');
 };
 
 const AddButton = () =>

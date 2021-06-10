@@ -21,7 +21,7 @@ const MaximumList = () =>
 			</tr>
 		</thead>
 		<tbody>
-			{ ItemManager.getMaxMin(context.state.items, 'max')
+			{ ItemManager.getMaximum(context.state.items)
 				.map(MaximumData) }
 		</tbody>
 	</table>;

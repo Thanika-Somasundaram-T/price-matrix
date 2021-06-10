@@ -41,26 +41,38 @@ const getProductMin = (items, Item) => {
 	return minValue;
 };
 
-const getMaxMin = (items, check) => {
-	const dict = [];
+const getMaximum = (items) => {
+	const arr = [];
 
 	items.map((Item) => {
-		const num = check !== 'min'
-			? getProductMax(items, Item)
-			: getProductMin(items, Item);
+		const num = getProductMax(items, Item);
 
 		// eslint-disable-next-line no-unused-expressions
 		num === Number(Item.price)
-			? dict.push(Item)
+			? arr.push(Item)
 			: null;
 	});
 
-	return dict;
+	return arr;
+};
+
+const getMinimum = (items) => {
+	const arr = [];
+
+	items.map((Item) => {
+		const num = getProductMin(items, Item);
+
+		if(num === Number(Item.price))
+			arr.push(Item);
+	});
+
+	return arr;
 };
 
 const ItemManager = {
 	addItems,
-	getMaxMin,
+	getMaximum,
+	getMinimum,
 };
 
 export default ItemManager;
