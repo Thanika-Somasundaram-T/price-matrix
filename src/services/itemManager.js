@@ -18,15 +18,13 @@ const addItems = (
 	));
 
 const getProductMax = (items, Item) => {
-	const max = [];
-
-	items.filter((item) =>
+	const prices = items.filter((item) =>
 		item.product === Item.product)
-		.map((dict) => max.push(dict.price));
+		.map((dict) => dict.price);
 
-	const maxValue = Math.max(...max);
+	const maxPrice = Math.max(...prices);
 
-	return maxValue;
+	return maxPrice;
 };
 
 const getProductMin = (items, Item) => {

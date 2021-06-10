@@ -16,8 +16,6 @@ const addItems = ({ state }) => {
 	const { shopInput, productInput, priceInput, items } = state;
 
 	return {
-		shopInput: '',
-		productInput: '',
 		priceInput: '',
 		items: ItemManager.addItems(
 			items, shopInput, productInput, priceInput

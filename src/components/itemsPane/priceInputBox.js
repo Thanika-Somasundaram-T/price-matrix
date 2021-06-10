@@ -7,7 +7,6 @@ const Price = () =>
 		type="number"
 		min="10"
 		max="1000"
-		// eslint-disable-next-line no-console
 		value={ context.state.priceInput }
 		onChange={ (evt) =>
 			context.actions.updatePriceInput(evt.target.value) }
